@@ -9,7 +9,7 @@ from pathlib import Path
 import logging
 
 logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s:%(levelname)s:%(message)s')
+                    format='[%(asctime)s]:%(levelname)s:%(message)s')
 
 project_name = 'cnnClassifier'
 
@@ -28,7 +28,8 @@ list_of_files = [
     'params.yaml',
     'requirements.txt',
     'setup.py',
-    'research/trials.ipynb'
+    'research/trials.ipynb',
+    'templates/index.html'
     ]
 
 for filepath in list_of_files:
